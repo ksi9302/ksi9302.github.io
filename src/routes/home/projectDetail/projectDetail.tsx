@@ -9,5 +9,5 @@ export default function ProjectDetail() {
   if (!project) {
     return <div>Project Not Found!</div>;
   }
-  return <div></div>;
+  return <div>Project Detail Page under construction</div>;
 }
