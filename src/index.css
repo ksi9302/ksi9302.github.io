@@ -18,3 +18,8 @@ h3 {
   @apply text-white;
   @apply font-roboto
 }
+
+p {
+  @apply mb-2;
+  @apply first-letter:font-bold
+}

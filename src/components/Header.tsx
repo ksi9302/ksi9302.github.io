@@ -3,7 +3,7 @@ import { ImGithub } from "react-icons/im";
 
 export default function Header() {
   return (
-    <div className="pt-4 md:pt-8 px-4 text-sm md:text-md">
+    <div className="pt-4 md:pt-8 px-8 md:px-20 text-sm md:text-md">
       <div className="flex flex-row gap-2 items-center">
         {/* Home */}
         <Link to="/">
