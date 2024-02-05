@@ -1,6 +1,6 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./routes/home/Home";
-import Header from "./Header";
+import Header from "./components/Header";
 import ProjectDetailWrapper from "./routes/home/projectDetail/ProjectDetailWrapper";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
@@ -11,6 +11,7 @@ import {
   HttpLink,
 } from "@apollo/client";
 import ProjectList from "./routes/home/projects/ProjectList";
+import Footer from "./components/Footer";
 
 const client = new ApolloClient({
   link: new HttpLink({
@@ -56,6 +57,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
+            <Footer />
           </div>
         </BrowserRouter>
       </div>

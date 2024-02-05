@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="flex flex-col gap-2 px-4 md:px-10 mt-4">
+    <div className="h-full flex flex-col gap-2 px-8 md:px-10 mt-4">
       <div className="my-5 md:my-8 md:text-4xl font-bold">Who is Peter.K?</div>
 
       <div>
@@ -18,9 +18,6 @@ export default function About() {
         and using multiple technologies / languages / frameworks, which
         eventually lead me to shift my career as a full-time freelance
         developer.
-        <br />
-        <br />
-        ...
       </div>
     </div>
   );
