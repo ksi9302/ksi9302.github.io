@@ -6,7 +6,8 @@ import { FaHourglass } from "react-icons/fa";
 import ProjectCode from "./ProjectCode";
 
 export default function ProjectDetail({ project }: { project: project }) {
-  const { title, code, desc, stacks, status, imgs, duration, id } = project;
+  const { title, code, desc, stacks, status, imgs, duration, id, ended } =
+    project;
 
   const navigate = useNavigate();
   const goBack = () => {
@@ -40,6 +41,8 @@ export default function ProjectDetail({ project }: { project: project }) {
             }}
           />
           {status.name}
+
+          {ended && <div className="hidden md:block text-sm">on {ended}</div>}
         </div>
       </div>
 

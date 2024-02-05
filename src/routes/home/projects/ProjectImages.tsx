@@ -97,7 +97,7 @@ const ProjectImage = ({
       }}
       className={`brightness-100 group-hover:brightness-[0.25] transition-all rounded-sm w-[1920px] absolute left-0 top-0 ${
         isDetailPage ? "cursor-pointer" : "pointer-events-none"
-      } duration-1000 ${!debouncedCurrent ? "opacity-0" : "opacity-100"}`}
+      } duration-1000 ${!debouncedCurrent ? "opacity-0 -z-10" : "opacity-100"}`}
     />
   );
 };
