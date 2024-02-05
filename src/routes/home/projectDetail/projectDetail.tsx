@@ -47,7 +47,7 @@ export default function ProjectDetail({ project }: { project: project }) {
       </div>
 
       <h2 className="self-start mt-2">Used Stacks</h2>
-      <div className="flex flex-row flex-wrap gap-2">
+      <div className="flex flex-row flex-wrap gap-2 w-full">
         {stacks.map((stack, i) => (
           <div className="bg-red-500 px-2 py-1 rounded-sm text-sm" key={i}>
             {stack}
@@ -56,7 +56,7 @@ export default function ProjectDetail({ project }: { project: project }) {
       </div>
 
       <h2 className="self-start mt-4">Description</h2>
-      <div className="whitespace-pre-wrap">{desc}</div>
+      <div className="whitespace-pre-wrap w-full">{desc}</div>
 
       <ProjectCode code={code} lang={lang} />
     </div>
