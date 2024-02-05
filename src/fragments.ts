@@ -16,5 +16,6 @@ export const ProjectFields = gql`
     stacks
     ended
     duration
+    lang
   }
 `;

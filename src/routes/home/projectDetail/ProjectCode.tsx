@@ -2,7 +2,13 @@ import { useState } from "react";
 import { FaRegCaretSquareDown, FaRegCaretSquareUp } from "react-icons/fa";
 import { CodeBlock, anOldHope } from "react-code-blocks";
 
-export default function ProjectCode({ code }: { code: string }) {
+export default function ProjectCode({
+  code,
+  lang,
+}: {
+  code: string;
+  lang: string;
+}) {
   const [extended, setExtended] = useState(false);
   return (
     <div className="flex flex-col w-full justify-start gap-2">
@@ -20,7 +26,7 @@ export default function ProjectCode({ code }: { code: string }) {
       {extended && (
         <CodeBlock
           text={code}
-          language="tsx"
+          language={lang}
           showLineNumbers={true}
           theme={anOldHope}
         />

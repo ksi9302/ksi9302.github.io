@@ -12,4 +12,5 @@ export interface project {
   stacks: string[];
   duration: number;
   ended?: string;
+  lang: string;
 }

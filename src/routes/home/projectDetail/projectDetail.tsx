@@ -6,7 +6,7 @@ import { FaHourglass } from "react-icons/fa";
 import ProjectCode from "./ProjectCode";
 
 export default function ProjectDetail({ project }: { project: project }) {
-  const { title, code, desc, stacks, status, imgs, duration, id, ended } =
+  const { title, code, desc, stacks, status, imgs, duration, id, ended, lang } =
     project;
 
   const navigate = useNavigate();
@@ -58,7 +58,7 @@ export default function ProjectDetail({ project }: { project: project }) {
       <h2 className="self-start mt-4">Description</h2>
       <div className="whitespace-pre-wrap">{desc}</div>
 
-      <ProjectCode code={code} />
+      <ProjectCode code={code} lang={lang} />
     </div>
   );
 }
