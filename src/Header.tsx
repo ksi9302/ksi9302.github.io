@@ -31,7 +31,7 @@ export default function Header() {
             </div>
           </Link>
           <Link to="https://github.com/ksi9302" target="_blank">
-            <ImGithub className="w-5 h-5" />
+            <ImGithub className="w-5 h-5 hover:fill-red-400" />
           </Link>
         </div>
       </div>

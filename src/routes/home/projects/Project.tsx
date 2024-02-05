@@ -1,23 +1,19 @@
 import { Link } from "react-router-dom";
-import { project } from "../../../types/types";
-// import { CodeBlock, dracula } from "react-code-blocks";
+import { project } from "../../../types";
+import ProjectImages from "./ProjectImages";
 
 interface props {
   project: project;
 }
 
 export default function Project({ project }: props) {
-  const { title, photo, desc, status, usedStacks } = project;
+  const { id, title, imgs, desc, status, stacks } = project;
 
   return (
-    <Link to={`/project/${title}`}>
-      <div className="group relative rounded-sm">
-        {/* BG Img */}
-        <img
-          src={`/projects/${photo}`}
-          alt={photo}
-          className="brightness-100 group-hover:brightness-[0.25] transition-all rounded-sm"
-        />
+    <Link to={`/project/${id}`}>
+      <div className="group relative rounded-sm ">
+        {/* Imgs */}
+        <ProjectImages imgs={imgs} id={id} />
         {/* Body */}
         <div className="w-full h-full absolute top-0 left-0 flex flex-col rounded-sm">
           {/* Header */}
@@ -25,11 +21,12 @@ export default function Project({ project }: props) {
             <div>{title}</div>
             <div className="flex flex-row items-center gap-2">
               <div
-                className={`p-[5px] rounded-full mt-[2px] ${
-                  status === "on-going" && "bg-green-500"
-                }`}
+                className="p-[5px] rounded-full mt-[2px]"
+                style={{
+                  backgroundColor: status.color,
+                }}
               />
-              {status}
+              {status.name}
             </div>
           </div>
 
@@ -40,20 +37,12 @@ export default function Project({ project }: props) {
             </div>
             <div className="my-5 text-center text-red-400">made using</div>
             <div className="flex flex-row gap-2 flex-wrap px-10">
-              {usedStacks.map((stack, i) => (
+              {stacks.map((stack, i) => (
                 <div className="bg-red-500 px-2 py-1 rounded-sm" key={i}>
                   {stack}
                 </div>
               ))}
             </div>
-
-            {/* <CodeBlock
-            text={code}
-            language="tsx"
-            showLineNumbers={true}
-            theme={dracula}
-            codeContainerStyle={{ flex: 1, overflow: "clip" }}
-          /> */}
           </div>
         </div>
         {/* Mobile View More */}

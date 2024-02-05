@@ -3,7 +3,7 @@ import ProjectList from "./projects/ProjectList";
 
 export default function Home() {
   return (
-    <div className="flex-1 flex flex-col pb-10">
+    <div className="flex-1 flex flex-col">
       <Greetings />
       <ProjectList />
     </div>
