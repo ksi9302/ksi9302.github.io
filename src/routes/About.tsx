@@ -40,22 +40,23 @@ export default function About() {
           JavaScript / <span className="text-red-400">TypeScript</span>
         </li>
         <li>
-          JS Frameworks: <span className="text-red-400">React</span>, React
-          Native, Node JS..
+          JS Frameworks: <span className="text-red-400">React</span>, NextJS,
+          React Native, Node JS..
         </li>
         <li>FrontEnd State management</li>
         <li>
           <span className="text-red-400">Tailwind CSS</span>, SCSS, Various UI
-          Frameworks inc. Bootstrap, Mui{" "}
+          Frameworks inc. Bootstrap, Mui, Shadcn..
         </li>
         <li>
-          Rest API, <span className="text-red-400">GraphQL</span> API / related
-          libraries inc. axios, <span className="text-red-400">Apollo</span>..
+          Rest API, WebHook, <span className="text-red-400">GraphQL</span> API /
+          related libraries inc. axios,{" "}
+          <span className="text-red-400">Apollo</span>..
         </li>
         <li>
           NoSQL:Mongo DB, SQL:MySql,{" "}
           <span className="text-red-400">PostgreSql</span>, ORMs inc.{" "}
-          <span className="text-red-400">Hasura</span>
+          <span className="text-red-400">Hasura</span>, Prisma
         </li>
         <li>
           Cloud Storage, <span className="text-red-400">Object Storage</span>,
