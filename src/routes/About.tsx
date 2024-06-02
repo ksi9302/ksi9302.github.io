@@ -41,7 +41,7 @@ export default function About() {
         </li>
         <li>
           JS Frameworks: <span className="text-red-400">React</span>, NextJS,
-          React Native, Node JS..
+          React Native, Astro, Node JS..
         </li>
         <li>FrontEnd State management</li>
         <li>
@@ -62,6 +62,7 @@ export default function About() {
           Cloud Storage, <span className="text-red-400">Object Storage</span>,
           NAS integration
         </li>
+        <li>Headless CMS Integration ex) Builder.io</li>
         <li>PWA with offline support, push notifications, real-time updates</li>
         <li>
           Product release on various platforms inc iOS, Android, Web Hosting,
