@@ -58,7 +58,7 @@ export default function ProjectDetail({ project }: { project: project }) {
       <h2 className="self-start mt-4">Description</h2>
       <div className="whitespace-pre-wrap w-full">{desc}</div>
 
-      <ProjectCode code={code} lang={lang} />
+      {/* <ProjectCode code={code} lang={lang} /> */}
     </div>
   );
 }
