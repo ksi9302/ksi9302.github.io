@@ -41,7 +41,7 @@ export default function About() {
         </li>
         <li>
           JS Frameworks: <span className="text-red-400">React</span>, NextJS,
-          React Native, Astro, Node JS..
+          Electron, React Native, Astro, Node JS..
         </li>
         <li>FrontEnd State management</li>
         <li>
